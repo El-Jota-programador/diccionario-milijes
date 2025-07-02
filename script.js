@@ -414,11 +414,10 @@ searchButton.addEventListener("click", () => {
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
             return;
-        } else {
-            p.innerText = "Palabra no encontrada";
-            resultsContainer.appendChild(p);
         }
     });
+    p.innerText = "Palabra no encontrada";
+    resultsContainer.appendChild(p);
 });
 
 //entrada → milijés = palabra en grande y definicion
