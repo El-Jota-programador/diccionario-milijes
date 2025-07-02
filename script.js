@@ -88,336 +88,360 @@ function svg(letra) {
 }
 
 const diccionario = [
-    {palabra: "a", traduccion: "a", pronunciacion: "/a/", definicion: ""},
-    {palabra: "abajo", traduccion: "bilo", pronunciacion: "/'bilo/", definicion: ""},
-    {palabra: "abandonar", traduccion: "astofa", pronunciacion: "/asto'fa/", definicion: "", conjugación: {
+    {palabra: "a", traduccion: "a", pronunciacion: "/a/", definicion: {
+        español: {
+            1: { categoria: "sus.", texto: "Primera letra del abecedario milijés." },
+            2: { categoria: "prep.", texto: ""}
+        }
+    }},
+    {palabra: "abajo", traduccion: "bilo", pronunciacion: "/'bilo/", definicion: {}},
+    {palabra: "abandonar", traduccion: "astofa", pronunciacion: "/asto'fa/", definicion: {}, conjugación: {
         infinitivo: "astofa",
         conjugado: "asto"
     }},
-    {palabra: "abandono", traduccion: "astro", pronunciacion: "/'asto/", definicion: ""},
-    {palabra: "abanicar", traduccion: "fanfa", pronunciacion: "/fan'fa/", definicion: "", conjugación: {
+    {palabra: "abandono", traduccion: "astro", pronunciacion: "/'asto/", definicion: {}},
+    {palabra: "abanicar", traduccion: "fanfa", pronunciacion: "/fan'fa/", definicion: {}, conjugación: {
         infinitivo: "fanfa",
         conjugado: "fan"
     }},
-    {palabra: "abanico", traduccion: "fan", pronunciacion: "/fan/", definicion: ""},
-    {palabra: "abdominal", traduccion: "estar", pronunciacion: "/'astaɾ/", definicion: ""},
-    {palabra: "abecedario", traduccion: "Ch-Lij", pronunciacion: "/'t͡ʃeliʒ/", definicion: ""},
-    {palabra: "abeja", traduccion: "nosi", pronunciacion: "/'nosi/", definicion: ""},
-    {palabra: "ablandar", traduccion: "esuafa", pronunciacion: "/esua'fa/", definicion: "", conjugación: {
+    {palabra: "abanico", traduccion: "fan", pronunciacion: "/fan/", definicion: {}},
+    {palabra: "abdominal", traduccion: "estar", pronunciacion: "/'astaɾ/", definicion: {}},
+    {palabra: "abecedario", traduccion: "Ch-Lij", pronunciacion: "/'t͡ʃeliʒ/", definicion: {}},
+    {palabra: "abeja", traduccion: "nosi", pronunciacion: "/'nosi/", definicion: {}},
+    {palabra: "ablandar", traduccion: "esuafa", pronunciacion: "/esua'fa/", definicion: {}, conjugación: {
         infinitivo: "esuafa",
         conjugado: "esua"
     }},
-    {palabra: "abofetear", traduccion: "tiakafa", pronunciacion: "/tiaka'fa/", definicion: "", conjugación: {
+    {palabra: "abofetear", traduccion: "tiakafa", pronunciacion: "/tiaka'fa/", definicion: {}, conjugación: {
         infinitivo: "tiakafa",
         conjugado: "tiaka"
     }},
-    {palabra: "abrazar", traduccion: "sangafa", pronunciacion: "/sanga'fa/", definicion: "", conjugación: {
+    {palabra: "abrazar", traduccion: "sangafa", pronunciacion: "/sanga'fa/", definicion: {}, conjugación: {
         infinitivo: "sangafa",
         conjugado: "sanga"
     }},
-    {palabra: "abrazo", traduccion: "sangra", pronunciacion: "/'sanga/", definicion: ""},
-    {palabra: "abrigo", traduccion: "palto", pronunciacion: "/'palto/", definicion: ""},
-    {palabra: "abril", traduccion: "serral", pronunciacion: "/'seral/", definicion: ""},
-    {palabra: "abrir", traduccion: "daralfa", pronunciacion: "/daɾal'fa/", definicion: "", conjugación: {
+    {palabra: "abrazo", traduccion: "sangra", pronunciacion: "/'sanga/", definicion: {}},
+    {palabra: "abrigo", traduccion: "palto", pronunciacion: "/'palto/", definicion: {}},
+    {palabra: "abril", traduccion: "serral", pronunciacion: "/'seral/", definicion: {}},
+    {palabra: "abrir", traduccion: "daralfa", pronunciacion: "/daɾal'fa/", definicion: {}, conjugación: {
         infinitivo: "daralfa",
         conjugado: "daral"
     }},
-    {palabra: "abuela", traduccion: "amama", pronunciacion: "/a'mama/", definicion: ""},
-    {palabra: "abuelo", traduccion: "apapa", pronunciacion: "/a'papa/", definicion: ""},
-    {palabra: "aburrimiento", traduccion: "jiche", pronunciacion: "/'ʒit͡ʃe/", definicion: ""},
-    {palabra: "acabar", traduccion: "iatafa", pronunciacion: "/iata'fa/", definicion: "", conjugación: {
+    {palabra: "abuela", traduccion: "amama", pronunciacion: "/a'mama/", definicion: {}},
+    {palabra: "abuelo", traduccion: "apapa", pronunciacion: "/a'papa/", definicion: {}},
+    {palabra: "aburrimiento", traduccion: "jiche", pronunciacion: "/'ʒit͡ʃe/", definicion: {}},
+    {palabra: "acabar", traduccion: "iatafa", pronunciacion: "/iata'fa/", definicion: {}, conjugación: {
         infinitivo: "iatafa",
         conjugado: "iata"
     }},
-    {palabra: "acariciar", traduccion: "gafa", pronunciacion: "/ga'fa/", definicion: "", conjugación: {
+    {palabra: "acariciar", traduccion: "gafa", pronunciacion: "/ga'fa/", definicion: {}, conjugación: {
         infinitivo: "gafa",
         conjugado: "ga"
     }},
-    {palabra: "accidente", traduccion: "kras", pronunciacion: "/kras/", definicion: ""},
-    {palabra: "aceite", traduccion: "bacua", pronunciacion: "/ba'θua/", definicion: ""},
-    {palabra: "aceptar", traduccion: "okifa", pronunciacion: "/oki'fa/", definicion: "", conjugación: {
+    {palabra: "accidente", traduccion: "kras", pronunciacion: "/kras/", definicion: {}},
+    {palabra: "aceite", traduccion: "bacua", pronunciacion: "/ba'θua/", definicion: {}},
+    {palabra: "aceptar", traduccion: "okifa", pronunciacion: "/oki'fa/", definicion: {}, conjugación: {
         infinitivo: "okifa",
         conjugado: "oki"
     }},
-    {palabra: "acero", traduccion: "erreo", pronunciacion: "/e'reo/", definicion: ""},
-    {palabra: "ácido", traduccion: "kise", pronunciacion: "/'kise/", definicion: ""},
-    {palabra: "acompañar", traduccion: "kontifa", pronunciacion: "/konti'fa/", definicion: "", conjugación: {
+    {palabra: "acero", traduccion: "erreo", pronunciacion: "/e'reo/", definicion: {}},
+    {palabra: "ácido", traduccion: "kise", pronunciacion: "/'kise/", definicion: {}},
+    {palabra: "acompañar", traduccion: "kontifa", pronunciacion: "/konti'fa/", definicion: {}, conjugación: {
         infinitivo: "kontifa",
         conjugado: "konti"
     }},
-    {palabra: "adelante", traduccion: "foraut", pronunciacion: "/fo'ɾaut/", definicion: ""},
-    {palabra: "adicto", traduccion: "nocadea", pronunciacion: "/noθa'dea/", definicion: ""},
-    {palabra: "adiós", traduccion: "kadei", pronunciacion: "/ka'ðei/", definicion: ""},
-    {palabra: "adivino", traduccion: "beitet", pronunciacion: "/be'itet/", definicion: ""},
-    {palabra: "adolescente", traduccion: "efibo", pronunciacion: "/e'fiβo/", definicion: ""},
-    {palabra: "adoptar", traduccion: "dakatifa", pronunciacion: "/dakati'fa/", definicion: "", conjugación: {
+    {palabra: "adelante", traduccion: "foraut", pronunciacion: "/fo'ɾaut/", definicion: {}},
+    {palabra: "adicto", traduccion: "nocadea", pronunciacion: "/noθa'dea/", definicion: {}},
+    {palabra: "adiós", traduccion: "kadei", pronunciacion: "/ka'ðei/", definicion: {}},
+    {palabra: "adivino", traduccion: "beitet", pronunciacion: "/be'itet/", definicion: {}},
+    {palabra: "adolescente", traduccion: "efibo", pronunciacion: "/e'fiβo/", definicion: {}},
+    {palabra: "adoptar", traduccion: "dakatifa", pronunciacion: "/dakati'fa/", definicion: {}, conjugación: {
         infinitivo: "dakatifa",
         conjugado: "dakati"
     }},
-    {palabra: "adorno", traduccion: "ornament", pronunciacion: "/or'nament/", definicion: ""},
-    {palabra: "adquirir", traduccion: "decupefa", pronunciacion: "/deθupe'fa/", definicion: "", conjugación: {
+    {palabra: "adorno", traduccion: "ornament", pronunciacion: "/or'nament/", definicion: {}},
+    {palabra: "adquirir", traduccion: "decupefa", pronunciacion: "/deθupe'fa/", definicion: {}, conjugación: {
         infinitivo: "decupefa",
         conjugado: "decupe"
     }},
-    {palabra: "adulto", traduccion: "enilikas", pronunciacion: "/eni'likas/", definicion: ""},
-    {palabra: "aéreo", traduccion: "aried", pronunciacion: "/a'ɾied/", definicion: ""},
-    {palabra: "aerodinámico", traduccion: "ariteel", pronunciacion: "/aɾi'teel/", definicion: ""},
-    {palabra: "aeropuerto", traduccion: "aritace", pronunciacion: "/aɾi'taθe/", definicion: ""},
-    {palabra: "afectado", traduccion: "abanio", pronunciacion: "/aβa'nio/", definicion: ""},
-    {palabra: "afectar", traduccion: "abafa", pronunciacion: "/aβa'fa/", definicion: "", conjugación: {
+    {palabra: "adulto", traduccion: "enilikas", pronunciacion: "/eni'likas/", definicion: {}},
+    {palabra: "aéreo", traduccion: "aried", pronunciacion: "/a'ɾied/", definicion: {}},
+    {palabra: "aerodinámico", traduccion: "ariteel", pronunciacion: "/aɾi'teel/", definicion: {}},
+    {palabra: "aeropuerto", traduccion: "aritace", pronunciacion: "/aɾi'taθe/", definicion: {}},
+    {palabra: "afectado", traduccion: "abanio", pronunciacion: "/aβa'nio/", definicion: {}},
+    {palabra: "afectar", traduccion: "abafa", pronunciacion: "/aβa'fa/", definicion: {}, conjugación: {
         infinitivo: "abafa",
         conjugado: "aba"
     }},
-    {palabra: "aferrar", traduccion: "bamafa", pronunciacion: "/bama'fa/", definicion: "", conjugación: {
+    {palabra: "aferrar", traduccion: "bamafa", pronunciacion: "/bama'fa/", definicion: {}, conjugación: {
         infinitivo: "bamafa",
         conjugado: "bama"
     }},
-    {palabra: "afición", traduccion: "somprug", pronunciacion: "/'sompɾug/", definicion: ""},
-    {palabra: "aficionado", traduccion: "somprugo", pronunciacion: "/som'pɾugo/", definicion: ""},
-    {palabra: "aficionar", traduccion: "somfa", pronunciacion: "/som'fa/", definicion: "", conjugación: {
+    {palabra: "afición", traduccion: "somprug", pronunciacion: "/'sompɾug/", definicion: {}},
+    {palabra: "aficionado", traduccion: "somprugo", pronunciacion: "/som'pɾugo/", definicion: {}},
+    {palabra: "aficionar", traduccion: "somfa", pronunciacion: "/som'fa/", definicion: {}, conjugación: {
         infinitivo: "somfa",
         conjugado: "som"
     }},
-    {palabra: "afilad@", traduccion: "teghni", pronunciacion: "/'texni/", definicion: ""},
-    {palabra: "aguacate", traduccion: "puchei", pronunciacion: "/pu't͡ʃei/", definicion: ""},
-    {palabra: "ahora", traduccion: "gora", pronunciacion: "/'goɾa/", definicion: ""},
-    {palabra: "ajo", traduccion: "ora", pronunciacion: "/'oɾa/", definicion: ""},
-    {palabra: "alto", traduccion: "pran", pronunciacion: "/pɾan/", definicion: ""},
-    {palabra: "allí", traduccion: "tere", pronunciacion: "/'teɾe/", definicion: ""},
-    {palabra: "amarillo", traduccion: "gel", pronunciacion: "/gel/", definicion: ""},
-    {palabra: "amistad", traduccion: "fralito", pronunciacion: "/fɾa'lito/", definicion: ""},
-    {palabra: "amor", traduccion: "aime", pronunciacion: "/'aime/", definicion: ""},
-    {palabra: "anacardo", traduccion: "nacar", pronunciacion: "/'nacaɾ/", definicion: ""},
-    {palabra: "antes", traduccion: "abem", pronunciacion: "/'aβem/", definicion: ""},
-    {palabra: "año", traduccion: "ani", pronunciacion: "/'ani/", definicion: ""},
-    {palabra: "aquí", traduccion: "jere", pronunciacion: "/'ʒeɾe/", definicion: ""},
-    {palabra: "arándano", traduccion: "besen", pronunciacion: "/'besen/", definicion: ""},
-    {palabra: "así", traduccion: "nika", pronunciacion: "/'nika/", definicion: ""},
-    {palabra: "avellana", traduccion: "malte", pronunciacion: "/'malte/", definicion: ""},
-    {palabra: "ayer", traduccion: "abemagora", pronunciacion: "/aβema'ɣoɾa/", definicion: ""},
-    {palabra: "azul", traduccion: "bren", pronunciacion: "/bɾen/", definicion: ""},
-    {palabra: "baj@", traduccion: "bilo", pronunciacion: "/'bilo/", definicion: ""},
-    {palabra: "bisabuela", traduccion: "sekonien amama", pronunciacion: "/seko'nien a'mama/", definicion: ""},
-    {palabra: "bisabuelo", traduccion: "sekonien apapa", pronunciacion: "/seko'nien a'papa/", definicion: ""},
-    {palabra: "blanco", traduccion: "uit", pronunciacion: "/'uit/", definicion: ""},
-    {palabra: "buen@", traduccion: "amba", pronunciacion: "/'amba/", definicion: ""},
-    {palabra: "cagar", traduccion: "losufa", pronunciacion: "/losu'fa/", definicion: "", conjugación: {
+    {palabra: "afilad@", traduccion: "teghni", pronunciacion: "/'texni/", definicion: {}},
+    {palabra: "aguacate", traduccion: "puchei", pronunciacion: "/pu't͡ʃei/", definicion: {}},
+    {palabra: "ahora", traduccion: "gora", pronunciacion: "/'goɾa/", definicion: {}},
+    {palabra: "ajo", traduccion: "ora", pronunciacion: "/'oɾa/", definicion: {}},
+    {palabra: "alto", traduccion: "pran", pronunciacion: "/pɾan/", definicion: {}},
+    {palabra: "allí", traduccion: "tere", pronunciacion: "/'teɾe/", definicion: {}},
+    {palabra: "amarillo", traduccion: "gel", pronunciacion: "/gel/", definicion: {}},
+    {palabra: "amistad", traduccion: "fralito", pronunciacion: "/fɾa'lito/", definicion: {}},
+    {palabra: "amor", traduccion: "aime", pronunciacion: "/'aime/", definicion: {}},
+    {palabra: "anacardo", traduccion: "nacar", pronunciacion: "/'nacaɾ/", definicion: {}},
+    {palabra: "antes", traduccion: "abem", pronunciacion: "/'aβem/", definicion: {}},
+    {palabra: "año", traduccion: "ani", pronunciacion: "/'ani/", definicion: {}},
+    {palabra: "aquí", traduccion: "jere", pronunciacion: "/'ʒeɾe/", definicion: {}},
+    {palabra: "arándano", traduccion: "besen", pronunciacion: "/'besen/", definicion: {}},
+    {palabra: "así", traduccion: "nika", pronunciacion: "/'nika/", definicion: {}},
+    {palabra: "avellana", traduccion: "malte", pronunciacion: "/'malte/", definicion: {}},
+    {palabra: "ayer", traduccion: "abemagora", pronunciacion: "/aβema'ɣoɾa/", definicion: {}},
+    {palabra: "azul", traduccion: "bren", pronunciacion: "/bɾen/", definicion: {}},
+    {palabra: "baj@", traduccion: "bilo", pronunciacion: "/'bilo/", definicion: {}},
+    {palabra: "bisabuela", traduccion: "sekonien amama", pronunciacion: "/seko'nien a'mama/", definicion: {}},
+    {palabra: "bisabuelo", traduccion: "sekonien apapa", pronunciacion: "/seko'nien a'papa/", definicion: {}},
+    {palabra: "blanco", traduccion: "uit", pronunciacion: "/'uit/", definicion: {}},
+    {palabra: "buen@", traduccion: "amba", pronunciacion: "/'amba/", definicion: {}},
+    {palabra: "cagar", traduccion: "losufa", pronunciacion: "/losu'fa/", definicion: {}, conjugación: {
         infinitivo: "losufa",
         conjugado: "losu"
     }},
-    {palabra: "capull@", traduccion: "nager", pronunciacion: "/'naɣeɾ/", definicion: ""},
-    {palabra: "Cataluña", traduccion: "Kataluna", pronunciacion: "/kata'luna/", definicion: ""},
-    {palabra: "casa", traduccion: "konfo", pronunciacion: "/'konfo/", definicion: ""},
-    {palabra: "castaña", traduccion: "rasin", pronunciacion: "/'rasin/", definicion: ""},
-    {palabra: "cereza", traduccion: "dubile", pronunciacion: "/du'βile/", definicion: ""},
-    {palabra: "cero", traduccion: "lin", pronunciacion: "/lin/", definicion: ""},
-    {palabra: "cien", traduccion: "poklinlin", pronunciacion: "/pok'linlin/", definicion: ""},
-    {palabra: "cinco", traduccion: "fibe", pronunciacion: "/'fiβe/", definicion: ""},
-    {palabra: "coche", traduccion: "popoi", pronunciacion: "/po'poi/", definicion: ""},
-    {palabra: "coco", traduccion: "nuti", pronunciacion: "/'nuti/", definicion: ""},
-    {palabra: "comer", traduccion: "ghalafa", pronunciacion: "/xala'fa/", definicion: "", conjugación: {
+    {palabra: "capull@", traduccion: "nager", pronunciacion: "/'naɣeɾ/", definicion: {}},
+    {palabra: "Cataluña", traduccion: "Kataluna", pronunciacion: "/kata'luna/", definicion: {}},
+    {palabra: "casa", traduccion: "konfo", pronunciacion: "/'konfo/", definicion: {}},
+    {palabra: "castaña", traduccion: "rasin", pronunciacion: "/'rasin/", definicion: {}},
+    {palabra: "cereza", traduccion: "dubile", pronunciacion: "/du'βile/", definicion: {}},
+    {palabra: "cero", traduccion: "lin", pronunciacion: "/lin/", definicion: {}},
+    {palabra: "cien", traduccion: "poklinlin", pronunciacion: "/pok'linlin/", definicion: {}},
+    {palabra: "cinco", traduccion: "fibe", pronunciacion: "/'fiβe/", definicion: {}},
+    {palabra: "coche", traduccion: "popoi", pronunciacion: "/po'poi/", definicion: {}},
+    {palabra: "coco", traduccion: "nuti", pronunciacion: "/'nuti/", definicion: {}},
+    {palabra: "comer", traduccion: "ghalafa", pronunciacion: "/xala'fa/", definicion: {}, conjugación: {
         infinitivo: "ghalafa",
         conjugado: "ghala"
     }},
-    {palabra: "cómo", traduccion: "edmane", pronunciacion: "/ed'mane/", definicion: ""},
-    {palabra: "contra ", traduccion: "bersa", pronunciacion: "/'beɾsa/", definicion: ""},
-    {palabra: "creer", traduccion: "cojafa", pronunciacion: "/coʒa'fa/", definicion: "", conjugación: {
+    {palabra: "cómo", traduccion: "edmane", pronunciacion: "/ed'mane/", definicion: {}},
+    {palabra: "contra ", traduccion: "bersa", pronunciacion: "/'beɾsa/", definicion: {}},
+    {palabra: "creer", traduccion: "cojafa", pronunciacion: "/coʒa'fa/", definicion: {}, conjugación: {
         infinitivo: "cojafa",
         conjugado: "coja"
     }},
-    {palabra: "cuando", traduccion: "muen", pronunciacion: "/'muen/", definicion: ""},
-    {palabra: "cuatro", traduccion: "kate", pronunciacion: "/'kate/", definicion: ""},
-    {palabra: "de", traduccion: "es", pronunciacion: "/ed/", definicion: ""},
-    {palabra: "década", traduccion: "poklindani", pronunciacion: "/poklin'dani/", definicion: ""},
-    {palabra: "decir", traduccion: "tochfa", pronunciacion: "/tot͡ʃ'fa/", definicion: "", conjugación: {
+    {palabra: "cuando", traduccion: "muen", pronunciacion: "/'muen/", definicion: {}},
+    {palabra: "cuatro", traduccion: "kate", pronunciacion: "/'kate/", definicion: {}},
+    {palabra: "de", traduccion: "ed", pronunciacion: "/ed/", definicion: {}},
+    {palabra: "década", traduccion: "poklindani", pronunciacion: "/poklin'dani/", definicion: {}},
+    {palabra: "decir", traduccion: "tochfa", pronunciacion: "/tot͡ʃ'fa/", definicion: {}, conjugación: {
         infinitivo: "tochfa",
         conjugado: "toch"
     }},
-    {palabra: "del", traduccion: "edo", pronunciacion: "/'eðo/", definicion: ""},
-    {palabra: "derech@", traduccion: "abi", pronunciacion: "/'aβi/", definicion: ""},
-    {palabra: "después", traduccion: "dali", pronunciacion: "/'dali/", definicion: ""},
-    {palabra: "día", traduccion: "iane", pronunciacion: "/i'ane/", definicion: ""},
-    {palabra: "diccionario", traduccion: "techinost", pronunciacion: "/te't͡ʃinost/", definicion: ""},
-    {palabra: "diez", traduccion: "poklin", pronunciacion: "/'poklin/", definicion: ""},
-    {palabra: "doce", traduccion: "pokseko", pronunciacion: "/pok'seko/", definicion: ""},
-    {palabra: "dónde", traduccion: "gur", pronunciacion: "/guɾ/", definicion: ""},
-    {palabra: "dos", traduccion: "seko", pronunciacion: "/'seko/", definicion: ""},
-    {palabra: "el", traduccion: "lo", pronunciacion: "/lo/", definicion: ""},
-    {palabra: "él", traduccion: "ro", pronunciacion: "/ro/", definicion: ""},
-    {palabra: "ella", traduccion: "ri", pronunciacion: "/ri/", definicion: ""},
-    {palabra: "ellas", traduccion: "ris", pronunciacion: "/ris/", definicion: ""},
-    {palabra: "ellos", traduccion: "ros", pronunciacion: "/ros/", definicion: ""},
-    {palabra: "ell@s", traduccion: "nes", pronunciacion: "/nes/", definicion: ""},
-    {palabra: "en", traduccion: "ne", pronunciacion: "/ne/", definicion: ""},
-    {palabra: "escuela", traduccion: "resklosia", pronunciacion: "/res'klosia/", definicion: ""},
-    {palabra: "España", traduccion: "Espana", pronunciacion: "/es'pana/", definicion: ""},
-    {palabra: "estar", traduccion: "ejulofa", pronunciacion: "/eʒulo'fa/", definicion: "", conjugación: {
+    {palabra: "del", traduccion: "edo", pronunciacion: "/'eðo/", definicion: {}},
+    {palabra: "derech@", traduccion: "abi", pronunciacion: "/'aβi/", definicion: {}},
+    {palabra: "después", traduccion: "dali", pronunciacion: "/'dali/", definicion: {}},
+    {palabra: "día", traduccion: "iane", pronunciacion: "/i'ane/", definicion: {}},
+    {palabra: "diccionario", traduccion: "techinost", pronunciacion: "/te't͡ʃinost/", definicion: {}},
+    {palabra: "diez", traduccion: "poklin", pronunciacion: "/'poklin/", definicion: {}},
+    {palabra: "doce", traduccion: "pokseko", pronunciacion: "/pok'seko/", definicion: {}},
+    {palabra: "dónde", traduccion: "gur", pronunciacion: "/guɾ/", definicion: {}},
+    {palabra: "dos", traduccion: "seko", pronunciacion: "/'seko/", definicion: {}},
+    {palabra: "el", traduccion: "lo", pronunciacion: "/lo/", definicion: {}},
+    {palabra: "él", traduccion: "ro", pronunciacion: "/ro/", definicion: {}},
+    {palabra: "ella", traduccion: "ri", pronunciacion: "/ri/", definicion: {}},
+    {palabra: "ellas", traduccion: "ris", pronunciacion: "/ris/", definicion: {}},
+    {palabra: "ellos", traduccion: "ros", pronunciacion: "/ros/", definicion: {}},
+    {palabra: "ell@s", traduccion: "nes", pronunciacion: "/nes/", definicion: {}},
+    {palabra: "en", traduccion: "ne", pronunciacion: "/ne/", definicion: {}},
+    {palabra: "escuela", traduccion: "resklosia", pronunciacion: "/res'klosia/", definicion: {}},
+    {palabra: "España", traduccion: "Espana", pronunciacion: "/es'pana/", definicion: {}},
+    {palabra: "estar", traduccion: "ejulofa", pronunciacion: "/eʒulo'fa/", definicion: {}, conjugación: {
         infinitivo: "ejulofa",
         conjugado: "ejulo"
     }},
-    {palabra: "esto", traduccion: "ako", pronunciacion: "/'ako/", definicion: ""},
-    {palabra: "felicidad", traduccion: "iendara", pronunciacion: "/ien'daɾa/", definicion: ""},
-    {palabra: "fe@", traduccion: "abari", pronunciacion: "/a'βaɾi/", definicion: ""},
-    {palabra: "follar", traduccion: "kakfa", pronunciacion: "/kak'fa/", definicion: "", conjugación: {
+    {palabra: "esto", traduccion: "ako", pronunciacion: "/'ako/", definicion: {}},
+    {palabra: "felicidad", traduccion: "iendara", pronunciacion: "/ien'daɾa/", definicion: {}},
+    {palabra: "fe@", traduccion: "abari", pronunciacion: "/a'βaɾi/", definicion: {}},
+    {palabra: "follar", traduccion: "kakfa", pronunciacion: "/kak'fa/", definicion: {}, conjugación: {
         infinitivo: "kakfa",
         conjugado: "kak"
     }},
-    {palabra: "frambuesa", traduccion: "bolij", pronunciacion: "/'boliʒ/", definicion: ""},
-    {palabra: "fresa", traduccion: "arba", pronunciacion: "/'aɾβa/", definicion: ""},
-    {palabra: "fruta", traduccion: "albesa", pronunciacion: "/al'βesa/", definicion: ""},
-    {palabra: "fuerza", traduccion: "astron", pronunciacion: "/'astɾon/", definicion: ""},
-    {palabra: "gay", traduccion: "ereme", pronunciacion: "/e'ɾeme/", definicion: ""},
-    {palabra: "gilipollas", traduccion: "naik", pronunciacion: "/'naik/", definicion: ""},
-    {palabra: "gracias", traduccion: "meren", pronunciacion: "/'meɾen/", definicion: ""},
-    {palabra: "gris", traduccion: "suit", pronunciacion: "/'suit/", definicion: ""},
-    {palabra: "guap@", traduccion: "rame", pronunciacion: "/'rame/", definicion: ""},
-    {palabra: "gustar", traduccion: "milfa", pronunciacion: "/mil'fa/", definicion: "", conjugación: {
+    {palabra: "frambuesa", traduccion: "bolij", pronunciacion: "/'boliʒ/", definicion: {}},
+    {palabra: "fresa", traduccion: "arba", pronunciacion: "/'aɾβa/", definicion: {}},
+    {palabra: "fruta", traduccion: "albesa", pronunciacion: "/al'βesa/", definicion: {}},
+    {palabra: "fuerza", traduccion: "astron", pronunciacion: "/'astɾon/", definicion: {}},
+    {palabra: "gay", traduccion: "ereme", pronunciacion: "/e'ɾeme/", definicion: {}},
+    {palabra: "gilipollas", traduccion: "naik", pronunciacion: "/'naik/", definicion: {}},
+    {palabra: "gracias", traduccion: "meren", pronunciacion: "/'meɾen/", definicion: {}},
+    {palabra: "gris", traduccion: "suit", pronunciacion: "/'suit/", definicion: {}},
+    {palabra: "guap@", traduccion: "rame", pronunciacion: "/'rame/", definicion: {}},
+    {palabra: "gustar", traduccion: "milfa", pronunciacion: "/mil'fa/", definicion: {}, conjugación: {
         infinitivo: "milfa",
         conjugado: "mil"
     }},
-    {palabra: "haber", traduccion: "felufa", pronunciacion: "/felu'fa/", definicion: "", conjugación: {
+    {palabra: "haber", traduccion: "felufa", pronunciacion: "/felu'fa/", definicion: {}, conjugación: {
         infinitivo: "felufa",
         conjugado: "felu"
     }},
-    {palabra: "hay", traduccion: "ifelu", pronunciacion: "/i'felu/", definicion: ""},
-    {palabra: "hola", traduccion: "jalo", pronunciacion: "/'ʒalo/", definicion: ""},
-    {palabra: "hora", traduccion: "lor", pronunciacion: "/loɾ/", definicion: ""},
-    {palabra: "hoy", traduccion: "agora", pronunciacion: "/a'ɣoɾa/", definicion: ""},
-    {palabra: "ir", traduccion: "marefa", pronunciacion: "/maɾe'fa/", definicion: "", conjugación: {
+    {palabra: "hay", traduccion: "ifelu", pronunciacion: "/i'felu/", definicion: {}},
+    {palabra: "hola", traduccion: "jalo", pronunciacion: "/'ʒalo/", definicion: {}},
+    {palabra: "hora", traduccion: "lor", pronunciacion: "/loɾ/", definicion: {}},
+    {palabra: "hoy", traduccion: "agora", pronunciacion: "/a'ɣoɾa/", definicion: {}},
+    {palabra: "ir", traduccion: "marefa", pronunciacion: "/maɾe'fa/", definicion: {}, conjugación: {
         infinitivo: "marefa",
         conjugado: "mare"
     }},
-    {palabra: "izquierd@", traduccion: "nabi", pronunciacion: "/'naβi/", definicion: ""},
-    {palabra: "la", traduccion: "li", pronunciacion: "/li/", definicion: ""},
-    {palabra: "las", traduccion: "lis", pronunciacion: "/lis/", definicion: ""},
-    {palabra: "L'Escala", traduccion: "li Eskala", pronunciacion: "/li es'kala/", definicion: ""},
-    {palabra: "L'Estartit", traduccion: "lo Estartit", pronunciacion: "/lo es'taɾtit/", definicion: ""},
-    {palabra: "limón", traduccion: "albis", pronunciacion: "/'alβis/", definicion: ""},
-    {palabra: "los", traduccion: "los", pronunciacion: "/los/", definicion: ""},
-    {palabra: "maíz", traduccion: "lote", pronunciacion: "/'lote/", definicion: ""},
-    {palabra: "mamá", traduccion: "ama", pronunciacion: "/'ama/", definicion: ""},
-    {palabra: "mandarina", traduccion: "inco", pronunciacion: "/'inθo/", definicion: ""},
-    {palabra: "manera", traduccion: "menie", pronunciacion: "/me'nie/", definicion: ""},
-    {palabra: "mango", traduccion: "niche", pronunciacion: "/'nit͡ʃe/", definicion: ""},
-    {palabra: "manzana", traduccion: "poc", pronunciacion: "/poθ/", definicion: ""},
-    {palabra: "mañana", traduccion: "dalagora ", pronunciacion: "/dala'ɣoɾa/", definicion: ""},
-    {palabra: "marrón", traduccion: "brun", pronunciacion: "/bɾun/", definicion: ""},
-    {palabra: "más", traduccion: "ema", pronunciacion: "/'ema/", definicion: ""},
-    {palabra: "me", traduccion: "em", pronunciacion: "/em/", definicion: ""},
-    {palabra: "melocotón", traduccion: "odich", pronunciacion: "/'odit͡ʃ/", definicion: ""},
-    {palabra: "melón", traduccion: "kana", pronunciacion: "/'kana/", definicion: ""},
-    {palabra: "menos", traduccion: "aka", pronunciacion: "/'aka/", definicion: ""},
-    {palabra: "mes", traduccion: "emale", pronunciacion: "/e'male/", definicion: ""},
-    {palabra: "mil", traduccion: "kilo", pronunciacion: "/'kilo/", definicion: ""},
-    {palabra: "minuto", traduccion: "monit", pronunciacion: "/'monit/", definicion: ""},
-    {palabra: "mora", traduccion: "draufen", pronunciacion: "/dɾa'ufen/", definicion: ""},
-    {palabra: "morado", traduccion: "pers", pronunciacion: "/peɾs/", definicion: ""},
-    {palabra: "much@", traduccion: "mujem", pronunciacion: "/'muʒem/", definicion: ""},
-    {palabra: "música", traduccion: "muscia", pronunciacion: "/mus'θia/", definicion: ""},
-    {palabra: "naranja (color)", traduccion: "orano", pronunciacion: "/o'ɾano/", definicion: ""},
-    {palabra: "naranja (fruta)", traduccion: "ince", pronunciacion: "/'inθe/", definicion: ""},
-    {palabra: "necatarina", traduccion: "liseia", pronunciacion: "/lise'ia/", definicion: ""},
-    {palabra: "negro", traduccion: "suart", pronunciacion: "/'suaɾt/", definicion: ""},
-    {palabra: "no", traduccion: "na", pronunciacion: "/na/", definicion: ""},
-    {palabra: "noche", traduccion: "elna", pronunciacion: "/'elna/", definicion: ""},
-    {palabra: "normal", traduccion: "enitur", pronunciacion: "/e'nituɾ/", definicion: ""},
-    {palabra: "nueve", traduccion: "mein", pronunciacion: "/'mein/", definicion: ""},
-    {palabra: "número", traduccion: "nombro", pronunciacion: "/'nombɾo/", definicion: ""},
-    {palabra: "ocho", traduccion: "lup", pronunciacion: "/lup/", definicion: ""},
-    {palabra: "once", traduccion: "pokpok", pronunciacion: "/'pokpok/", definicion: ""},
-    {palabra: "original", traduccion: "originak", pronunciacion: "/oɾi'xinak/", definicion: ""},
-    {palabra: "palabra", traduccion: "techin", pronunciacion: "/'tet͡ʃin/", definicion: ""},
-    {palabra: "papá", traduccion: "apa", pronunciacion: "/'apa/", definicion: ""},
-    {palabra: "papaya", traduccion: "tropai", pronunciacion: "/tɾo'pai/", definicion: ""},
-    {palabra: "pasa", traduccion: "arrudof", pronunciacion: "/a'rudof/", definicion: ""},
-    {palabra: "pene", traduccion: "col", pronunciacion: "/col/", definicion: ""},
-    {palabra: "pensar", traduccion: "denkenfa", pronunciacion: "/denken'fa/", definicion: "", conjugación: {
+    {palabra: "izquierd@", traduccion: "nabi", pronunciacion: "/'naβi/", definicion: {}},
+    {palabra: "la", traduccion: "li", pronunciacion: "/li/", definicion: {}},
+    {palabra: "las", traduccion: "lis", pronunciacion: "/lis/", definicion: {}},
+    {palabra: "L'Escala", traduccion: "li Eskala", pronunciacion: "/li es'kala/", definicion: {}},
+    {palabra: "L'Estartit", traduccion: "lo Estartit", pronunciacion: "/lo es'taɾtit/", definicion: {}},
+    {palabra: "limón", traduccion: "albis", pronunciacion: "/'alβis/", definicion: {}},
+    {palabra: "los", traduccion: "los", pronunciacion: "/los/", definicion: {}},
+    {palabra: "maíz", traduccion: "lote", pronunciacion: "/'lote/", definicion: {}},
+    {palabra: "mamá", traduccion: "ama", pronunciacion: "/'ama/", definicion: {}},
+    {palabra: "mandarina", traduccion: "inco", pronunciacion: "/'inθo/", definicion: {}},
+    {palabra: "manera", traduccion: "menie", pronunciacion: "/me'nie/", definicion: {}},
+    {palabra: "mango", traduccion: "niche", pronunciacion: "/'nit͡ʃe/", definicion: {}},
+    {palabra: "manzana", traduccion: "poc", pronunciacion: "/poθ/", definicion: {}},
+    {palabra: "mañana", traduccion: "dalagora ", pronunciacion: "/dala'ɣoɾa/", definicion: {}},
+    {palabra: "marrón", traduccion: "brun", pronunciacion: "/bɾun/", definicion: {}},
+    {palabra: "más", traduccion: "ema", pronunciacion: "/'ema/", definicion: {}},
+    {palabra: "me", traduccion: "em", pronunciacion: "/em/", definicion: {}},
+    {palabra: "melocotón", traduccion: "odich", pronunciacion: "/'odit͡ʃ/", definicion: {}},
+    {palabra: "melón", traduccion: "kana", pronunciacion: "/'kana/", definicion: {}},
+    {palabra: "menos", traduccion: "aka", pronunciacion: "/'aka/", definicion: {}},
+    {palabra: "mes", traduccion: "emale", pronunciacion: "/e'male/", definicion: {}},
+    {palabra: "mil", traduccion: "kilo", pronunciacion: "/'kilo/", definicion: {}},
+    {palabra: "minuto", traduccion: "monit", pronunciacion: "/'monit/", definicion: {}},
+    {palabra: "mora", traduccion: "draufen", pronunciacion: "/dɾa'ufen/", definicion: {}},
+    {palabra: "morado", traduccion: "pers", pronunciacion: "/peɾs/", definicion: {}},
+    {palabra: "much@", traduccion: "mujem", pronunciacion: "/'muʒem/", definicion: {}},
+    {palabra: "música", traduccion: "muscia", pronunciacion: "/mus'θia/", definicion: {}},
+    {palabra: "naranja (color)", traduccion: "orano", pronunciacion: "/o'ɾano/", definicion: {}},
+    {palabra: "naranja (fruta)", traduccion: "ince", pronunciacion: "/'inθe/", definicion: {}},
+    {palabra: "necatarina", traduccion: "liseia", pronunciacion: "/lise'ia/", definicion: {}},
+    {palabra: "negro", traduccion: "suart", pronunciacion: "/'suaɾt/", definicion: {}},
+    {palabra: "no", traduccion: "na", pronunciacion: "/na/", definicion: {}},
+    {palabra: "noche", traduccion: "elna", pronunciacion: "/'elna/", definicion: {}},
+    {palabra: "normal", traduccion: "enitur", pronunciacion: "/e'nituɾ/", definicion: {}},
+    {palabra: "nueve", traduccion: "mein", pronunciacion: "/'mein/", definicion: {}},
+    {palabra: "número", traduccion: "nombro", pronunciacion: "/'nombɾo/", definicion: {}},
+    {palabra: "ocho", traduccion: "lup", pronunciacion: "/lup/", definicion: {}},
+    {palabra: "once", traduccion: "pokpok", pronunciacion: "/'pokpok/", definicion: {}},
+    {palabra: "original", traduccion: "originak", pronunciacion: "/oɾi'xinak/", definicion: {}},
+    {palabra: "palabra", traduccion: "techin", pronunciacion: "/'tet͡ʃin/", definicion: {}},
+    {palabra: "papá", traduccion: "apa", pronunciacion: "/'apa/", definicion: {}},
+    {palabra: "papaya", traduccion: "tropai", pronunciacion: "/tɾo'pai/", definicion: {}},
+    {palabra: "pasa", traduccion: "arrudof", pronunciacion: "/a'rudof/", definicion: {}},
+    {palabra: "pene", traduccion: "col", pronunciacion: "/col/", definicion: {}},
+    {palabra: "pensar", traduccion: "denkenfa", pronunciacion: "/denken'fa/", definicion: {}, conjugación: {
         infinitivo: "denkenfa",
         conjugado: "denken"
     }},
-    {palabra: "pequeño", traduccion: "ebilo", pronunciacion: "/e'βilo/", definicion: ""},
-    {palabra: "pera", traduccion: "uliet", pronunciacion: "/u'liet/", definicion: ""},
-    {palabra: "perro", traduccion: "faranak", pronunciacion: "/fa'ɾanak/", definicion: ""},
-    {palabra: "piña", traduccion: "paina", pronunciacion: "/pa'ina/", definicion: ""},
-    {palabra: "plátano", traduccion: "pekfu", pronunciacion: "/'pekfu/", definicion: ""},
-    {palabra: "pomelo", traduccion: "inceroen", pronunciacion: "/inθe'roen/", definicion: ""},
-    {palabra: "porque", traduccion: "choa", pronunciacion: "/'t͡ʃoa/", definicion: ""},
-    {palabra: "por qué", traduccion: "No inventada", pronunciacion: ""},
-    {palabra: "puerto", traduccion: "tace", pronunciacion: "/'taθe/", definicion: ""},
-    {palabra: "que", traduccion: "lat", pronunciacion: "/lat/", definicion: ""},
-    {palabra: "qué", traduccion: "koi", pronunciacion: "/'koi/", definicion: ""},
-    {palabra: "rojo", traduccion: "roen", pronunciacion: "/'roen/", definicion: ""},
-    {palabra: "rosa", traduccion: "pien", pronunciacion: "/'pien/", definicion: ""},
-    {palabra: "saber", traduccion: "nobafa", pronunciacion: "/noβa'fa/", definicion: "", conjugación: {
+    {palabra: "pequeño", traduccion: "ebilo", pronunciacion: "/e'βilo/", definicion: {}},
+    {palabra: "pera", traduccion: "uliet", pronunciacion: "/u'liet/", definicion: {}},
+    {palabra: "perro", traduccion: "faranak", pronunciacion: "/fa'ɾanak/", definicion: {}},
+    {palabra: "piña", traduccion: "paina", pronunciacion: "/pa'ina/", definicion: {}},
+    {palabra: "plátano", traduccion: "pekfu", pronunciacion: "/'pekfu/", definicion: {}},
+    {palabra: "pomelo", traduccion: "inceroen", pronunciacion: "/inθe'roen/", definicion: {}},
+    {palabra: "porque", traduccion: "choa", pronunciacion: "/'t͡ʃoa/", definicion: {}},
+    {palabra: "por qué", traduccion: "No inventada", pronunciacion: "", definicion: {}},
+    {palabra: "puerto", traduccion: "tace", pronunciacion: "/'taθe/", definicion: {}},
+    {palabra: "que", traduccion: "lat", pronunciacion: "/lat/", definicion: {}},
+    {palabra: "qué", traduccion: "koi", pronunciacion: "/'koi/", definicion: {}},
+    {palabra: "rojo", traduccion: "roen", pronunciacion: "/'roen/", definicion: {}},
+    {palabra: "rosa", traduccion: "pien", pronunciacion: "/'pien/", definicion: {}},
+    {palabra: "saber", traduccion: "nobafa", pronunciacion: "/noβa'fa/", definicion: {}, conjugación: {
         infinitivo: "nobafa",
         conjugado: "noba"
     }},
-    {palabra: "sandía", traduccion: "masari", pronunciacion: "/ma'sari/", definicion: ""},
-    {palabra: "segundo", traduccion: "sekone", pronunciacion: "/se'kone/", definicion: ""},
-    {palabra: "segundo (ordinal)", traduccion: "sekonien", pronunciacion: "/se'konien/", definicion: ""},
-    {palabra: "seis", traduccion: "ses", pronunciacion: "/ses/", definicion: ""},
-    {palabra: "semana", traduccion: "celiane", pronunciacion: "/θeli'ane/", definicion: ""},
-    {palabra: "ser", traduccion: "erfa", pronunciacion: "/eɾ'fa/", definicion: "", conjugación: {
+    {palabra: "sandía", traduccion: "masari", pronunciacion: "/ma'sari/", definicion: {}},
+    {palabra: "segundo", traduccion: "sekone", pronunciacion: "/se'kone/", definicion: {}},
+    {palabra: "segundo (ordinal)", traduccion: "sekonien", pronunciacion: "/se'konien/", definicion: {}},
+    {palabra: "seis", traduccion: "ses", pronunciacion: "/ses/", definicion: {}},
+    {palabra: "semana", traduccion: "celiane", pronunciacion: "/θeli'ane/", definicion: {}},
+    {palabra: "ser", traduccion: "erfa", pronunciacion: "/eɾ'fa/", definicion: {}, conjugación: {
         infinitivo: "erfa",
         conjugado: "bar"
     }},
-    {palabra: "sí", traduccion: "da", pronunciacion: "/da/", definicion: ""},
-    {palabra: "subnormal", traduccion: "bilenitur", pronunciacion: "/bile'nituɾ/", definicion: ""},
-    {palabra: "su", traduccion: "nei", pronunciacion: "/'nei/", definicion: ""},
-    {palabra: "sus", traduccion: "neis", pronunciacion: "/'neis/", definicion: ""},
-    {palabra: "tarde", traduccion: "destem ", pronunciacion: "/'destem/", definicion: ""},
-    {palabra: "tardar", traduccion: "destemfa", pronunciacion: "/destem'fa/", definicion: "", conjugación: {
+    {palabra: "sí", traduccion: "da", pronunciacion: "/da/", definicion: {}},
+    {palabra: "subnormal", traduccion: "bilenitur", pronunciacion: "/bile'nituɾ/", definicion: {}},
+    {palabra: "su", traduccion: "nei", pronunciacion: "/'nei/", definicion: {}},
+    {palabra: "sus", traduccion: "neis", pronunciacion: "/'neis/", definicion: {}},
+    {palabra: "tarde", traduccion: "destem ", pronunciacion: "/'destem/", definicion: {}},
+    {palabra: "tardar", traduccion: "destemfa", pronunciacion: "/destem'fa/", definicion: {}, conjugación: {
         infinitivo: "destemfa",
         conjugado: "destem"
     }},
-    {palabra: "te", traduccion: "ra", pronunciacion: "/ra/", definicion: ""},
-    {palabra: "tener", traduccion: "abofa", pronunciacion: "/aβo'fa/", definicion: "", conjugación: {
+    {palabra: "te", traduccion: "ra", pronunciacion: "/ra/", definicion: {}},
+    {palabra: "tener", traduccion: "abofa", pronunciacion: "/aβo'fa/", definicion: {}, conjugación: {
         infinitivo: "abofa",
         conjugado: "abo"
     }},
-    {palabra: "tiempo", traduccion: "tema ", pronunciacion: "/'tema/", definicion: ""},
-    {palabra: "tomate", traduccion: "cheif", pronunciacion: "/'t͡ʃeif/", definicion: ""},
-    {palabra: "Torroella", traduccion: "Torroela", pronunciacion: "/toro'ela/", definicion: ""},
-    {palabra: "trabajar", traduccion: "laborafa", pronunciacion: "/laβoɾa'fa/", definicion: "", conjugación: {
+    {palabra: "tiempo", traduccion: "tema ", pronunciacion: "/'tema/", definicion: {}},
+    {palabra: "tomate", traduccion: "cheif", pronunciacion: "/'t͡ʃeif/", definicion: {}},
+    {palabra: "Torroella", traduccion: "Torroela", pronunciacion: "/toro'ela/", definicion: {}},
+    {palabra: "trabajar", traduccion: "laborafa", pronunciacion: "/laβoɾa'fa/", definicion: {}, conjugación: {
         infinitivo: "laborafa",
         conjugado: "labora"
     }},
-    {palabra: "trabajo", traduccion: "laboro", pronunciacion: "/la'βoɾo/", definicion: ""},
-    {palabra: "tres", traduccion: "torsis", pronunciacion: "/'torsis/", definicion: ""},
-    {palabra: "tu", traduccion: "rai", pronunciacion: "/'rai/", definicion: ""},
-    {palabra: "tus", traduccion: "rais", pronunciacion: "/'rais/", definicion: ""},
-    {palabra: "un", traduccion: "nu", pronunciacion: "/nu/", definicion: ""},
-    {palabra: "uno", traduccion: "pok", pronunciacion: "/pok/", definicion: ""},
-    {palabra: "uva", traduccion: "dof", pronunciacion: "/dof/", definicion: ""},
-    {palabra: "veinte", traduccion: "sekolin", pronunciacion: "/se'kolin/", definicion: ""},
-    {palabra: "verde", traduccion: "groen", pronunciacion: "/'gɾoen/", definicion: ""},
-    {palabra: "y", traduccion: "i", pronunciacion: "/i/", definicion: ""}
+    {palabra: "trabajo", traduccion: "laboro", pronunciacion: "/la'βoɾo/", definicion: {}},
+    {palabra: "tres", traduccion: "torsis", pronunciacion: "/'torsis/", definicion: {}},
+    {palabra: "tu", traduccion: "rai", pronunciacion: "/'rai/", definicion: {}},
+    {palabra: "tus", traduccion: "rais", pronunciacion: "/'rais/", definicion: {}},
+    {palabra: "un", traduccion: "nu", pronunciacion: "/nu/", definicion: {}},
+    {palabra: "uno", traduccion: "pok", pronunciacion: "/pok/", definicion: {}},
+    {palabra: "uva", traduccion: "dof", pronunciacion: "/dof/", definicion: {}},
+    {palabra: "veinte", traduccion: "sekolin", pronunciacion: "/se'kolin/", definicion: {}},
+    {palabra: "verde", traduccion: "groen", pronunciacion: "/'gɾoen/", definicion: {}},
+    {palabra: "y", traduccion: "i", pronunciacion: "/i/", definicion: {}}
 ]
 
 const searchInput = document.getElementById("search");
 const searchButton = document.getElementById("search-button");
 const resultsContainer = document.getElementById("results");
 
-searchButton.addEventListener("click", () => {
+function buscarPalabra() {
     const busqueda = searchInput.value.trim().toLowerCase();
     resultsContainer.innerHTML = ""; // Limpiar resultados anteriores
     let p = document.createElement('p');
+    p.classList.add('word');
     let t = document.createElement('p');
+    t.classList.add('word-strong');
     let pr = document.createElement('p');
-    
-    diccionario.forEach(element => {
+    pr.classList.add('word-gray');
+
+    diccionario.forEach((element) => {
         if (element.palabra === busqueda) {
-            p.innerText = element.palabra;
-            t.innerText = `Traducción al milijés: ${element.traduccion}`;
-            pr.innerText = `Pronunciación: ${element.pronunciacion}`;
+            p.innerText = "En milijés:";
+            t.innerText = element.traduccion;
+            pr.innerText = element.pronunciacion;
             resultsContainer.appendChild(p);
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
-            return;
         }
     });
-    p.innerText = "Palabra no encontrada";
-    resultsContainer.appendChild(p);
+    if (resultsContainer.innerHTML == '') {
+        p.innerText = "Palabra no encontrada";
+        resultsContainer.appendChild(p);
+    }
+    return; 
+}
+
+searchButton.addEventListener("click", () => {
+    if (searchInput.value.trim() === "") {
+    resultsContainer.innerHTML = "<p class='word'>Por favor, ingresa una palabra para buscar.</p>";
+    } else {
+        buscarPalabra();
+    }
+});
+
+searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        buscarPalabra();
+    }
 });
 
 //entrada → milijés = palabra en grande y definicion
