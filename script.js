@@ -421,6 +421,11 @@ function buscarPalabra() {
             resultsContainer.appendChild(p);
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
+        } else if (element.traduccion === busqueda) {
+            t.innerText = element.traduccion;
+            pr.innerText = element.pronunciacion;
+            resultsContainer.appendChild(t);
+            resultsContainer.appendChild(pr);
         }
     });
     if (resultsContainer.innerHTML == '') {
