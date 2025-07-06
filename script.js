@@ -94,7 +94,7 @@ const diccionario = [
             2: { categoria: "prep.", texto: "Indica "}
         },
         milijes: {
-            1: { categoria: "", texto: "Poknien  ed Ch-Lij ed milijes" },
+            1: { categoria: "", texto: "Poknien fosna ed Ch-Lij ed milijes" },
             2: { categoria: "", texto: "" }
         }
     }},
@@ -187,15 +187,13 @@ const diccionario = [
         infinitivo: "somfa",
         conjugado: "som"
     }},
-    {palabra: "afilad@", traduccion: "teghni", pronunciacion: "/'texni/", definicion: {}},
+    {palabra: "afilado", sinonimos: ["afilada"], traduccion: "teghni", pronunciacion: "/'texni/", definicion: {}},
     {palabra: "aguacate", traduccion: "puchei", pronunciacion: "/pu't͡ʃei/", definicion: {}},
     {palabra: "agujerear", traduccion: "fonarfa", pronunciacion: "/fonaɾ'fa/", definicion: {}, conjugacion: {
         infinitivo: "fonarfa",
         conjugado: "fonar"
     }},
     {palabra: "agujero", traduccion: "fonar", pronunciacion: "/'fonaɾ/", definicion: {}},
-    {palabra: "castaña", traduccion: "rasin", pronunciacion: "/'rasin/", definicion: {}},
-    {palabra: "castaña", traduccion: "rasin", pronunciacion: "/'rasin/", definicion: {}},
     {palabra: "ahora", traduccion: "gora", pronunciacion: "/'goɾa/", definicion: {}},
     {palabra: "ajo", traduccion: "ora", pronunciacion: "/'oɾa/", definicion: {}},
     {palabra: "alto", traduccion: "pran", pronunciacion: "/pɾan/", definicion: {}},
@@ -203,6 +201,7 @@ const diccionario = [
     {palabra: "amarillo", traduccion: "gel", pronunciacion: "/gel/", definicion: {}},
     {palabra: "amistad", traduccion: "fralito", pronunciacion: "/fɾa'lito/", definicion: {}},
     {palabra: "amor", traduccion: "aime", pronunciacion: "/'aime/", definicion: {}},
+    {palabra: "amar", traduccion: "aimefa", pronunciacion: "/aime'fa/", definicion: {}},
     {palabra: "anacardo", traduccion: "nacar", pronunciacion: "/'nacaɾ/", definicion: {}},
     {palabra: "antes", traduccion: "abem", pronunciacion: "/'aβem/", definicion: {}},
     {palabra: "año", traduccion: "ani", pronunciacion: "/'ani/", definicion: {}},
@@ -353,7 +352,7 @@ const diccionario = [
     {palabra: "papá", traduccion: "apa", pronunciacion: "/'apa/", definicion: {}},
     {palabra: "papaya", traduccion: "tropai", pronunciacion: "/tɾo'pai/", definicion: {}},
     {palabra: "pasa", traduccion: "arrudof", pronunciacion: "/a'rudof/", definicion: {}},
-    {palabra: "pene", traduccion: "col", pronunciacion: "/col/", definicion: {}},
+    {palabra: "pene", traduccion: "col", pronunciacion: "/θol/", definicion: {}},
     {palabra: "pensar", traduccion: "denkenfa", pronunciacion: "/denken'fa/", definicion: {}, conjugacion: {
         infinitivo: "denkenfa",
         conjugado: "denken"
@@ -436,8 +435,18 @@ function buscarPalabra() {
     let divC = document.createElement('div');
     divC.classList.add('div-conjugacion');
     let c = document.createElement('p');
-    c.classList.add('word');
+    c.classList.add('subtitulo-conj');
     divC.appendChild(c);
+    let c2 = document.createElement('p');
+    c2.classList.add('contenido-conjugacion')
+    c2.classList.add('subtitulo-conj');
+    divC.appendChild(c2);
+    let c3 = document.createElement('p');
+    c3.classList.add('contenido-conjugacion');
+    divC.appendChild(c3);
+    let c4 = document.createElement('p');
+    c4.classList.add('contenido-conjugacion');
+    divC.appendChild(c4);
 
     diccionario.forEach((element) => {
         if (element.palabra === busqueda || element.sinonimos?.includes(busqueda)) { // Si la palabra está en español y/o es un sinónimo
@@ -448,17 +457,24 @@ function buscarPalabra() {
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
             if (element.conjugacion) {
-                tc.innerHTML = 'Conjugación:';
-                c.innerHTML = `<strong>Infinitivo:</strong> ${element.conjugacion.infinitivo} <br>
-                <strong>Forma conjugada: </strong>${element.conjugacion.conjugado}`;
-                resultsContainer.appendChild(tc);
-                resultsContainer.appendChild(divC);
-            }
+            tc.innerHTML = 'Conjugación:';
+            c.innerHTML = `<strong>Infinitivo:</strong> ${element.conjugacion.infinitivo} <br>
+            <strong>Forma conjugada: </strong>${element.conjugacion.conjugado}`;
+            resultsContainer.appendChild(tc);
+            resultsContainer.appendChild(divC);
+        }
         } else if (element.traduccion === busqueda) { // Si la palabra está en milijés
             t.innerText = element.traduccion;
             pr.innerText = element.pronunciacion;
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
+            if (element.conjugacion) {
+            tc.innerHTML = 'Conjugación:';
+            c.innerHTML = `<span class="subtitulo-conj"><strong>Infinitivo:</strong></span> ${element.conjugacion.infinitivo} <br>
+            <strong>Forma conjugada: </strong>${element.conjugacion.conjugado}`;
+            resultsContainer.appendChild(tc);
+            resultsContainer.appendChild(divC);
+        }
         } 
     });
     if (resultsContainer.innerHTML == '') {
