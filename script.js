@@ -91,16 +91,20 @@ const diccionario = [
     {palabra: "a", traduccion: "a", pronunciacion: "/a/", definicion: {
         español: {
             1: { categoria: "sus.", texto: "Primera letra del abecedario milijés." },
-            2: { categoria: "prep.", texto: ""}
+            2: { categoria: "prep.", texto: "Indica "}
+        },
+        milijes: {
+            1: { categoria: "", texto: "Poknien  ed Ch-Lij ed milijes" },
+            2: { categoria: "", texto: "" }
         }
     }},
     {palabra: "abajo", traduccion: "bilo", pronunciacion: "/'bilo/", definicion: {}},
-    {palabra: "abandonar", traduccion: "astofa", pronunciacion: "/asto'fa/", definicion: {}, conjugación: {
+    {palabra: "abandonar", traduccion: "astofa", pronunciacion: "/asto'fa/", definicion: {}, conjugacion: {
         infinitivo: "astofa",
         conjugado: "asto"
     }},
-    {palabra: "abandono", traduccion: "astro", pronunciacion: "/'asto/", definicion: {}},
-    {palabra: "abanicar", traduccion: "fanfa", pronunciacion: "/fan'fa/", definicion: {}, conjugación: {
+    {palabra: "abandono", traduccion: "asto", pronunciacion: "/'asto/", definicion: {}},
+    {palabra: "abanicar", traduccion: "fanfa", pronunciacion: "/fan'fa/", definicion: {}, conjugacion: {
         infinitivo: "fanfa",
         conjugado: "fan"
     }},
@@ -108,45 +112,45 @@ const diccionario = [
     {palabra: "abdominal", traduccion: "estar", pronunciacion: "/'astaɾ/", definicion: {}},
     {palabra: "abecedario", traduccion: "Ch-Lij", pronunciacion: "/'t͡ʃeliʒ/", definicion: {}},
     {palabra: "abeja", traduccion: "nosi", pronunciacion: "/'nosi/", definicion: {}},
-    {palabra: "ablandar", traduccion: "esuafa", pronunciacion: "/esua'fa/", definicion: {}, conjugación: {
+    {palabra: "ablandar", traduccion: "esuafa", pronunciacion: "/esua'fa/", definicion: {}, conjugacion: {
         infinitivo: "esuafa",
         conjugado: "esua"
     }},
-    {palabra: "abofetear", traduccion: "tiakafa", pronunciacion: "/tiaka'fa/", definicion: {}, conjugación: {
+    {palabra: "abofetear", traduccion: "tiakafa", pronunciacion: "/tiaka'fa/", definicion: {}, conjugacion: {
         infinitivo: "tiakafa",
         conjugado: "tiaka"
     }},
-    {palabra: "abrazar", traduccion: "sangafa", pronunciacion: "/sanga'fa/", definicion: {}, conjugación: {
+    {palabra: "abrazar", traduccion: "sangafa", pronunciacion: "/sanga'fa/", definicion: {}, conjugacion: {
         infinitivo: "sangafa",
         conjugado: "sanga"
     }},
     {palabra: "abrazo", traduccion: "sangra", pronunciacion: "/'sanga/", definicion: {}},
     {palabra: "abrigo", traduccion: "palto", pronunciacion: "/'palto/", definicion: {}},
     {palabra: "abril", traduccion: "serral", pronunciacion: "/'seral/", definicion: {}},
-    {palabra: "abrir", traduccion: "daralfa", pronunciacion: "/daɾal'fa/", definicion: {}, conjugación: {
+    {palabra: "abrir", traduccion: "daralfa", pronunciacion: "/daɾal'fa/", definicion: {}, conjugacion: {
         infinitivo: "daralfa",
         conjugado: "daral"
     }},
     {palabra: "abuela", traduccion: "amama", pronunciacion: "/a'mama/", definicion: {}},
     {palabra: "abuelo", traduccion: "apapa", pronunciacion: "/a'papa/", definicion: {}},
     {palabra: "aburrimiento", traduccion: "jiche", pronunciacion: "/'ʒit͡ʃe/", definicion: {}},
-    {palabra: "acabar", traduccion: "iatafa", pronunciacion: "/iata'fa/", definicion: {}, conjugación: {
+    {palabra: "acabar", traduccion: "iatafa", pronunciacion: "/iata'fa/", definicion: {}, conjugacion: {
         infinitivo: "iatafa",
         conjugado: "iata"
     }},
-    {palabra: "acariciar", traduccion: "gafa", pronunciacion: "/ga'fa/", definicion: {}, conjugación: {
+    {palabra: "acariciar", traduccion: "gafa", pronunciacion: "/ga'fa/", definicion: {}, conjugacion: {
         infinitivo: "gafa",
         conjugado: "ga"
     }},
     {palabra: "accidente", traduccion: "kras", pronunciacion: "/kras/", definicion: {}},
     {palabra: "aceite", traduccion: "bacua", pronunciacion: "/ba'θua/", definicion: {}},
-    {palabra: "aceptar", traduccion: "okifa", pronunciacion: "/oki'fa/", definicion: {}, conjugación: {
+    {palabra: "aceptar", traduccion: "okifa", pronunciacion: "/oki'fa/", definicion: {}, conjugacion: {
         infinitivo: "okifa",
         conjugado: "oki"
     }},
     {palabra: "acero", traduccion: "erreo", pronunciacion: "/e'reo/", definicion: {}},
     {palabra: "ácido", traduccion: "kise", pronunciacion: "/'kise/", definicion: {}},
-    {palabra: "acompañar", traduccion: "kontifa", pronunciacion: "/konti'fa/", definicion: {}, conjugación: {
+    {palabra: "acompañar", traduccion: "kontifa", pronunciacion: "/konti'fa/", definicion: {}, conjugacion: {
         infinitivo: "kontifa",
         conjugado: "konti"
     }},
@@ -155,12 +159,12 @@ const diccionario = [
     {palabra: "adiós", traduccion: "kadei", pronunciacion: "/ka'ðei/", definicion: {}},
     {palabra: "adivino", traduccion: "beitet", pronunciacion: "/be'itet/", definicion: {}},
     {palabra: "adolescente", traduccion: "efibo", pronunciacion: "/e'fiβo/", definicion: {}},
-    {palabra: "adoptar", traduccion: "dakatifa", pronunciacion: "/dakati'fa/", definicion: {}, conjugación: {
+    {palabra: "adoptar", traduccion: "dakatifa", pronunciacion: "/dakati'fa/", definicion: {}, conjugacion: {
         infinitivo: "dakatifa",
         conjugado: "dakati"
     }},
     {palabra: "adorno", traduccion: "ornament", pronunciacion: "/or'nament/", definicion: {}},
-    {palabra: "adquirir", traduccion: "decupefa", pronunciacion: "/deθupe'fa/", definicion: {}, conjugación: {
+    {palabra: "adquirir", traduccion: "decupefa", pronunciacion: "/deθupe'fa/", definicion: {}, conjugacion: {
         infinitivo: "decupefa",
         conjugado: "decupe"
     }},
@@ -169,22 +173,29 @@ const diccionario = [
     {palabra: "aerodinámico", traduccion: "ariteel", pronunciacion: "/aɾi'teel/", definicion: {}},
     {palabra: "aeropuerto", traduccion: "aritace", pronunciacion: "/aɾi'taθe/", definicion: {}},
     {palabra: "afectado", traduccion: "abanio", pronunciacion: "/aβa'nio/", definicion: {}},
-    {palabra: "afectar", traduccion: "abafa", pronunciacion: "/aβa'fa/", definicion: {}, conjugación: {
+    {palabra: "afectar", traduccion: "abafa", pronunciacion: "/aβa'fa/", definicion: {}, conjugacion: {
         infinitivo: "abafa",
         conjugado: "aba"
     }},
-    {palabra: "aferrar", traduccion: "bamafa", pronunciacion: "/bama'fa/", definicion: {}, conjugación: {
+    {palabra: "aferrar", traduccion: "bamafa", pronunciacion: "/bama'fa/", definicion: {}, conjugacion: {
         infinitivo: "bamafa",
         conjugado: "bama"
     }},
     {palabra: "afición", traduccion: "somprug", pronunciacion: "/'sompɾug/", definicion: {}},
     {palabra: "aficionado", traduccion: "somprugo", pronunciacion: "/som'pɾugo/", definicion: {}},
-    {palabra: "aficionar", traduccion: "somfa", pronunciacion: "/som'fa/", definicion: {}, conjugación: {
+    {palabra: "aficionar", traduccion: "somfa", pronunciacion: "/som'fa/", definicion: {}, conjugacion: {
         infinitivo: "somfa",
         conjugado: "som"
     }},
     {palabra: "afilad@", traduccion: "teghni", pronunciacion: "/'texni/", definicion: {}},
     {palabra: "aguacate", traduccion: "puchei", pronunciacion: "/pu't͡ʃei/", definicion: {}},
+    {palabra: "agujerear", traduccion: "fonarfa", pronunciacion: "/fonaɾ'fa/", definicion: {}, conjugacion: {
+        infinitivo: "fonarfa",
+        conjugado: "fonar"
+    }},
+    {palabra: "agujero", traduccion: "fonar", pronunciacion: "/'fonaɾ/", definicion: {}},
+    {palabra: "castaña", traduccion: "rasin", pronunciacion: "/'rasin/", definicion: {}},
+    {palabra: "castaña", traduccion: "rasin", pronunciacion: "/'rasin/", definicion: {}},
     {palabra: "ahora", traduccion: "gora", pronunciacion: "/'goɾa/", definicion: {}},
     {palabra: "ajo", traduccion: "ora", pronunciacion: "/'oɾa/", definicion: {}},
     {palabra: "alto", traduccion: "pran", pronunciacion: "/pɾan/", definicion: {}},
@@ -201,32 +212,38 @@ const diccionario = [
     {palabra: "avellana", traduccion: "malte", pronunciacion: "/'malte/", definicion: {}},
     {palabra: "ayer", traduccion: "abemagora", pronunciacion: "/aβema'ɣoɾa/", definicion: {}},
     {palabra: "azul", traduccion: "bren", pronunciacion: "/bɾen/", definicion: {}},
-    {palabra: "baj@", traduccion: "bilo", pronunciacion: "/'bilo/", definicion: {}},
+    {palabra: "b", traduccion: "b", pronunciacion: "/b/", definicion: {
+        español: {
+            1: ""
+        }
+    }},
+    {palabra: "bajo", sinonimos: ["baja"], traduccion: "bilo", pronunciacion: "/'bilo/", definicion: {}},
     {palabra: "bisabuela", traduccion: "sekonien amama", pronunciacion: "/seko'nien a'mama/", definicion: {}},
     {palabra: "bisabuelo", traduccion: "sekonien apapa", pronunciacion: "/seko'nien a'papa/", definicion: {}},
     {palabra: "blanco", traduccion: "uit", pronunciacion: "/'uit/", definicion: {}},
-    {palabra: "buen@", traduccion: "amba", pronunciacion: "/'amba/", definicion: {}},
-    {palabra: "cagar", traduccion: "losufa", pronunciacion: "/losu'fa/", definicion: {}, conjugación: {
+    {palabra: "bueno", sinonimos: ["buena"], traduccion: "amba", pronunciacion: "/'amba/", definicion: {}},
+    {palabra: "cagar", traduccion: "losufa", pronunciacion: "/losu'fa/", definicion: {}, conjugacion: {
         infinitivo: "losufa",
         conjugado: "losu"
     }},
-    {palabra: "capull@", traduccion: "nager", pronunciacion: "/'naɣeɾ/", definicion: {}},
-    {palabra: "Cataluña", traduccion: "Kataluna", pronunciacion: "/kata'luna/", definicion: {}},
+    {palabra: "capullo", sinonimos: ["capulla"], traduccion: "nager", pronunciacion: "/'naɣeɾ/", definicion: {}},
     {palabra: "casa", traduccion: "konfo", pronunciacion: "/'konfo/", definicion: {}},
     {palabra: "castaña", traduccion: "rasin", pronunciacion: "/'rasin/", definicion: {}},
+    {palabra: "Cataluña", traduccion: "Kataluna", pronunciacion: "/kata'luna/", definicion: {}},
+    {palabra: "cavar", traduccion: "agarfa", pronunciacion: "/agaɾ'fa/", definicion: {}},
     {palabra: "cereza", traduccion: "dubile", pronunciacion: "/du'βile/", definicion: {}},
     {palabra: "cero", traduccion: "lin", pronunciacion: "/lin/", definicion: {}},
     {palabra: "cien", traduccion: "poklinlin", pronunciacion: "/pok'linlin/", definicion: {}},
     {palabra: "cinco", traduccion: "fibe", pronunciacion: "/'fiβe/", definicion: {}},
     {palabra: "coche", traduccion: "popoi", pronunciacion: "/po'poi/", definicion: {}},
     {palabra: "coco", traduccion: "nuti", pronunciacion: "/'nuti/", definicion: {}},
-    {palabra: "comer", traduccion: "ghalafa", pronunciacion: "/xala'fa/", definicion: {}, conjugación: {
+    {palabra: "comer", traduccion: "ghalafa", pronunciacion: "/xala'fa/", definicion: {}, conjugacion: {
         infinitivo: "ghalafa",
         conjugado: "ghala"
     }},
     {palabra: "cómo", traduccion: "edmane", pronunciacion: "/ed'mane/", definicion: {}},
     {palabra: "contra ", traduccion: "bersa", pronunciacion: "/'beɾsa/", definicion: {}},
-    {palabra: "creer", traduccion: "cojafa", pronunciacion: "/coʒa'fa/", definicion: {}, conjugación: {
+    {palabra: "creer", traduccion: "cojafa", pronunciacion: "/coʒa'fa/", definicion: {}, conjugacion: {
         infinitivo: "cojafa",
         conjugado: "coja"
     }},
@@ -234,7 +251,7 @@ const diccionario = [
     {palabra: "cuatro", traduccion: "kate", pronunciacion: "/'kate/", definicion: {}},
     {palabra: "de", traduccion: "ed", pronunciacion: "/ed/", definicion: {}},
     {palabra: "década", traduccion: "poklindani", pronunciacion: "/poklin'dani/", definicion: {}},
-    {palabra: "decir", traduccion: "tochfa", pronunciacion: "/tot͡ʃ'fa/", definicion: {}, conjugación: {
+    {palabra: "decir", sinonimos: ["hablar"], traduccion: "tochfa", pronunciacion: "/tot͡ʃ'fa/", definicion: {}, conjugacion: {
         infinitivo: "tochfa",
         conjugado: "toch"
     }},
@@ -256,14 +273,14 @@ const diccionario = [
     {palabra: "en", traduccion: "ne", pronunciacion: "/ne/", definicion: {}},
     {palabra: "escuela", traduccion: "resklosia", pronunciacion: "/res'klosia/", definicion: {}},
     {palabra: "España", traduccion: "Espana", pronunciacion: "/es'pana/", definicion: {}},
-    {palabra: "estar", traduccion: "ejulofa", pronunciacion: "/eʒulo'fa/", definicion: {}, conjugación: {
+    {palabra: "estar", traduccion: "ejulofa", pronunciacion: "/eʒulo'fa/", definicion: {}, conjugacion: {
         infinitivo: "ejulofa",
         conjugado: "ejulo"
     }},
     {palabra: "esto", traduccion: "ako", pronunciacion: "/'ako/", definicion: {}},
     {palabra: "felicidad", traduccion: "iendara", pronunciacion: "/ien'daɾa/", definicion: {}},
     {palabra: "fe@", traduccion: "abari", pronunciacion: "/a'βaɾi/", definicion: {}},
-    {palabra: "follar", traduccion: "kakfa", pronunciacion: "/kak'fa/", definicion: {}, conjugación: {
+    {palabra: "follar", traduccion: "kakfa", pronunciacion: "/kak'fa/", definicion: {}, conjugacion: {
         infinitivo: "kakfa",
         conjugado: "kak"
     }},
@@ -276,11 +293,11 @@ const diccionario = [
     {palabra: "gracias", traduccion: "meren", pronunciacion: "/'meɾen/", definicion: {}},
     {palabra: "gris", traduccion: "suit", pronunciacion: "/'suit/", definicion: {}},
     {palabra: "guap@", traduccion: "rame", pronunciacion: "/'rame/", definicion: {}},
-    {palabra: "gustar", traduccion: "milfa", pronunciacion: "/mil'fa/", definicion: {}, conjugación: {
+    {palabra: "gustar", traduccion: "milfa", pronunciacion: "/mil'fa/", definicion: {}, conjugacion: {
         infinitivo: "milfa",
         conjugado: "mil"
     }},
-    {palabra: "haber", traduccion: "felufa", pronunciacion: "/felu'fa/", definicion: {}, conjugación: {
+    {palabra: "haber", traduccion: "felufa", pronunciacion: "/felu'fa/", definicion: {}, conjugacion: {
         infinitivo: "felufa",
         conjugado: "felu"
     }},
@@ -288,7 +305,7 @@ const diccionario = [
     {palabra: "hola", traduccion: "jalo", pronunciacion: "/'ʒalo/", definicion: {}},
     {palabra: "hora", traduccion: "lor", pronunciacion: "/loɾ/", definicion: {}},
     {palabra: "hoy", traduccion: "agora", pronunciacion: "/a'ɣoɾa/", definicion: {}},
-    {palabra: "ir", traduccion: "marefa", pronunciacion: "/maɾe'fa/", definicion: {}, conjugación: {
+    {palabra: "ir", traduccion: "marefa", pronunciacion: "/maɾe'fa/", definicion: {}, conjugacion: {
         infinitivo: "marefa",
         conjugado: "mare"
     }},
@@ -297,6 +314,7 @@ const diccionario = [
     {palabra: "las", traduccion: "lis", pronunciacion: "/lis/", definicion: {}},
     {palabra: "L'Escala", traduccion: "li Eskala", pronunciacion: "/li es'kala/", definicion: {}},
     {palabra: "L'Estartit", traduccion: "lo Estartit", pronunciacion: "/lo es'taɾtit/", definicion: {}},
+    {palabra: "letra", traduccion: "fosna", pronunciacion: "/'fosna'/", definicion: {}},
     {palabra: "limón", traduccion: "albis", pronunciacion: "/'alβis/", definicion: {}},
     {palabra: "los", traduccion: "los", pronunciacion: "/los/", definicion: {}},
     {palabra: "maíz", traduccion: "lote", pronunciacion: "/'lote/", definicion: {}},
@@ -336,7 +354,7 @@ const diccionario = [
     {palabra: "papaya", traduccion: "tropai", pronunciacion: "/tɾo'pai/", definicion: {}},
     {palabra: "pasa", traduccion: "arrudof", pronunciacion: "/a'rudof/", definicion: {}},
     {palabra: "pene", traduccion: "col", pronunciacion: "/col/", definicion: {}},
-    {palabra: "pensar", traduccion: "denkenfa", pronunciacion: "/denken'fa/", definicion: {}, conjugación: {
+    {palabra: "pensar", traduccion: "denkenfa", pronunciacion: "/denken'fa/", definicion: {}, conjugacion: {
         infinitivo: "denkenfa",
         conjugado: "denken"
     }},
@@ -353,7 +371,7 @@ const diccionario = [
     {palabra: "qué", traduccion: "koi", pronunciacion: "/'koi/", definicion: {}},
     {palabra: "rojo", traduccion: "roen", pronunciacion: "/'roen/", definicion: {}},
     {palabra: "rosa", traduccion: "pien", pronunciacion: "/'pien/", definicion: {}},
-    {palabra: "saber", traduccion: "nobafa", pronunciacion: "/noβa'fa/", definicion: {}, conjugación: {
+    {palabra: "saber", traduccion: "nobafa", pronunciacion: "/noβa'fa/", definicion: {}, conjugacion: {
         infinitivo: "nobafa",
         conjugado: "noba"
     }},
@@ -362,7 +380,7 @@ const diccionario = [
     {palabra: "segundo (ordinal)", traduccion: "sekonien", pronunciacion: "/se'konien/", definicion: {}},
     {palabra: "seis", traduccion: "ses", pronunciacion: "/ses/", definicion: {}},
     {palabra: "semana", traduccion: "celiane", pronunciacion: "/θeli'ane/", definicion: {}},
-    {palabra: "ser", traduccion: "erfa", pronunciacion: "/eɾ'fa/", definicion: {}, conjugación: {
+    {palabra: "ser", traduccion: "erfa", pronunciacion: "/eɾ'fa/", definicion: {}, conjugacion: {
         infinitivo: "erfa",
         conjugado: "bar"
     }},
@@ -371,19 +389,20 @@ const diccionario = [
     {palabra: "su", traduccion: "nei", pronunciacion: "/'nei/", definicion: {}},
     {palabra: "sus", traduccion: "neis", pronunciacion: "/'neis/", definicion: {}},
     {palabra: "tarde", traduccion: "destem ", pronunciacion: "/'destem/", definicion: {}},
-    {palabra: "tardar", traduccion: "destemfa", pronunciacion: "/destem'fa/", definicion: {}, conjugación: {
+    {palabra: "tardar", traduccion: "destemfa", pronunciacion: "/destem'fa/", definicion: {}, conjugacion: {
         infinitivo: "destemfa",
         conjugado: "destem"
     }},
     {palabra: "te", traduccion: "ra", pronunciacion: "/ra/", definicion: {}},
-    {palabra: "tener", traduccion: "abofa", pronunciacion: "/aβo'fa/", definicion: {}, conjugación: {
+    {palabra: "tener", traduccion: "abofa", pronunciacion: "/aβo'fa/", definicion: {}, conjugacion: {
         infinitivo: "abofa",
         conjugado: "abo"
     }},
     {palabra: "tiempo", traduccion: "tema ", pronunciacion: "/'tema/", definicion: {}},
+    {palabra: "tierra", traduccion: "agar", pronunciacion: "/'aɣaɾ/", definicion: {}},
     {palabra: "tomate", traduccion: "cheif", pronunciacion: "/'t͡ʃeif/", definicion: {}},
     {palabra: "Torroella", traduccion: "Torroela", pronunciacion: "/toro'ela/", definicion: {}},
-    {palabra: "trabajar", traduccion: "laborafa", pronunciacion: "/laβoɾa'fa/", definicion: {}, conjugación: {
+    {palabra: "trabajar", traduccion: "laborafa", pronunciacion: "/laβoɾa'fa/", definicion: {}, conjugacion: {
         infinitivo: "laborafa",
         conjugado: "labora"
     }},
@@ -412,21 +431,35 @@ function buscarPalabra() {
     t.classList.add('word-strong');
     let pr = document.createElement('p');
     pr.classList.add('word-gray');
+    let tc = document.createElement('p');
+    tc.classList.add('word-big');
+    let divC = document.createElement('div');
+    divC.classList.add('div-conjugacion');
+    let c = document.createElement('p');
+    c.classList.add('word');
+    divC.appendChild(c);
 
     diccionario.forEach((element) => {
-        if (element.palabra === busqueda) {
+        if (element.palabra === busqueda || element.sinonimos?.includes(busqueda)) { // Si la palabra está en español y/o es un sinónimo
             p.innerText = "En milijés:";
             t.innerText = element.traduccion;
             pr.innerText = element.pronunciacion;
             resultsContainer.appendChild(p);
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
-        } else if (element.traduccion === busqueda) {
+            if (element.conjugacion) {
+                tc.innerHTML = 'Conjugación:';
+                c.innerHTML = `<strong>Infinitivo:</strong> ${element.conjugacion.infinitivo} <br>
+                <strong>Forma conjugada: </strong>${element.conjugacion.conjugado}`;
+                resultsContainer.appendChild(tc);
+                resultsContainer.appendChild(divC);
+            }
+        } else if (element.traduccion === busqueda) { // Si la palabra está en milijés
             t.innerText = element.traduccion;
             pr.innerText = element.pronunciacion;
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
-        }
+        } 
     });
     if (resultsContainer.innerHTML == '') {
         p.innerText = "Palabra no encontrada";
@@ -435,19 +468,20 @@ function buscarPalabra() {
     return; 
 }
 
-searchButton.addEventListener("click", () => {
+function verificarBusqueda () {
     if (searchInput.value.trim() === "") {
     resultsContainer.innerHTML = "<p class='word'>Por favor, ingresa una palabra para buscar.</p>";
     } else {
         buscarPalabra();
     }
+}
+
+searchButton.addEventListener("click", () => {
+    verificarBusqueda();
 });
 
 searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
-        buscarPalabra();
+        verificarBusqueda();
     }
 });
-
-//entrada → milijés = palabra en grande y definicion
-//entrada → español = "en milijés " palabra traducida en grande y definicion
