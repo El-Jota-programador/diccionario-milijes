@@ -6,9 +6,9 @@ body {
 .titulo {
   color: #ff6600;
   height: 2em;
-  width: auto;
+  width: 2em;
   margin:0 -0.3em;
-  font-size: 2em
+  font-size: 2em;
 }
 .inicial-titulo {
   color: #00aaff;
