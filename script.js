@@ -453,30 +453,42 @@ const diccionario = [
             conjugado: "decupe"
         }
     },
-    {palabra: "adulto", traduccion: "enilikas", pronunciacion: "/eni'likas/", definicion: {español: {
-            1: { categoria: "", texto: "" }
-        },
-        milijes: {
-            1: { categoria: "", texto: "" }
-        }}},
-    {palabra: "aéreo", traduccion: "aried", pronunciacion: "/a'ɾied/", definicion: {español: {
-            1: { categoria: "", texto: "" }
-        },
-        milijes: {
-            1: { categoria: "", texto: "" }
-        }}},
-    {palabra: "aerodinámico", traduccion: "ariteel", pronunciacion: "/aɾi'teel/", definicion: {español: {
-            1: { categoria: "", texto: "" }
-        },
-        milijes: {
-            1: { categoria: "", texto: "" }
-        }}},
-    {palabra: "aeropuerto", traduccion: "aritace", pronunciacion: "/aɾi'taθe/", definicion: {español: {
-            1: { categoria: "", texto: "" }
-        },
-        milijes: {
-            1: { categoria: "", texto: "" }
-        }}},
+    {palabra: "adulto", traduccion: "enilikas", pronunciacion: "/eni'likas/", definicion: {
+            español: {
+                1: { categoria: "", texto: "" }
+            },
+            milijes: {
+                1: { categoria: "", texto: "" }
+            }
+        }
+    },
+    {palabra: "aéreo", traduccion: "aried", pronunciacion: "/a'ɾied/", definicion: {
+            español: {
+                1: { categoria: "", texto: "" }
+            },
+                milijes: {
+                1: { categoria: "", texto: "" }
+            }
+        }
+    },
+    {palabra: "aerodinámico", traduccion: "ariteel", pronunciacion: "/aɾi'teel/", definicion: {
+            español: {
+                1: { categoria: "", texto: "" }
+            },
+            milijes: {
+                1: { categoria: "", texto: "" }
+            }
+        }
+    },
+    {palabra: "aeropuerto", traduccion: "aritace", pronunciacion: "/aɾi'taθe/", definicion: {
+            español: {
+                1: { categoria: "", texto: "" }
+            },
+            milijes: {
+                1: { categoria: "", texto: "" }
+            }
+        }
+    },
     {palabra: "afectado", traduccion: "abanio", pronunciacion: "/aβa'nio/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
