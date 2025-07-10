@@ -6,7 +6,7 @@ body {
 .titulo {
   color: #ff6600;
   height: 2em;
-  width: 2em;
+  width: auto;
   margin:0 -0.3em;
   font-size: 2em
 }
@@ -15,7 +15,9 @@ body {
 }
 .techin {
   margin-left: 0;
-  max-width: 90%;
+  max-width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
 }
 input {
   border: none;
