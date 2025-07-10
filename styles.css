@@ -16,8 +16,6 @@ body {
 .techin {
   margin-left: 0;
   max-width: 80%;
-  display: flex;
-  flex-wrap: nowrap;
 }
 input {
   border: none;
