@@ -1,92 +1,3 @@
-const svgNS = "http://www.w3.org/2000/svg";
-
-/*const a = document.createElement(SVGPathElement);
-a.setAttribute("d", "M18 63 L30 45 L55 45");
-
-const b = document.createElement(SVGPathElement);
-b.setAttribute("d", "M20 10 L20 60 M20 35 Q40 30 40 60");
-
-const c = document.createElement(SVGPathElement);
-c.setAttribute("d", "M46.5 20 Q25 1 9.8 22 Q3 33 9 43 Q25 64 46.5 45");
-
-const d = document.createElement(SVGPathElement);
-d.setAttribute("d", "M20 10 L20 55 Q40 50 40 30");
-
-const e = document.createElement(SVGPathElement);
-e.setAttribute("d", "M20 10 L20 60 M20 35 L43 35");
-
-const f = document.createElement(SVGPathElement);
-f.setAttribute("d", "M20 10 L40 10 40 60 M40 23.33333333333333333333333333333333 L60 23.33333333333333333333333333333333");
-
-const gue = document.createElement(SVGPathElement);
-gue.setAttribute("d", "M50 20 A15 15 0 0 0 20 20 L20 60 M50 60 L50 40 40 40");
-
-const gh = document.createElement(SVGPathElement);
-gh.setAttribute("d", "M20 30 L20 56 40 56 Q40 33 60 33");
-
-const lij = document.createElementNS(svgNS, "g");
-const lij1 = document.createElementNS(svgNS, "path")
-lij1.setAttribute("d", "M20 55 L5 55 L5 10 L45 10 A5 5 90 0 1 45 30");
-lij1.setAttribute("stroke-width", "7.5");
-const lij2 = document.createElementNS(svgNS, "path")
-lij2.setAttribute("d", "M7 6 L7 10");
-lij2.setAttribute("stroke-width", "5");
-lij.appendChild(lij1);
-lij.appendChild(lij2);
-
-const i = document.createElement(SVGPathElement);
-i.setAttribute("d", "M20 55 L60 55 M40 40 L40 20");
-
-const j = document.createElement(SVGPathElement);
-j.setAttribute("d", "M20 10 L50 10 L50 60 M24 60 L24 45");
-
-const k = document.createElement(SVGPathElement);
-k.setAttribute("d", "M20 10 L20 60 M48 22 Q35 28 35 40 Q38 53 50 45");
-
-const l = document.createElement(SVGPathElement);
-l.setAttribute("d", "M20 40 L20 55 52.5 55");
-
-const m = document.createElement(SVGPathElement);
-m.setAttribute("d", "M20 10 20 60 M35 23 L45 33 L55 23");
-
-const n = document.createElement(SVGPathElement);
-n.setAttribute("d", "M8 -4 L50 64");
-
-const o = document.createElement(SVGEllipseElement);
-o.setAttribute("cx", "30");
-o.setAttribute("cy", "30");
-o.setAttribute("rx", "15");
-o.setAttribute("ry", "20");
-
-const p = document.createElement(SVGPathElement);
-p.setAttribute("d", "M20 60 L20 10 Q45 10 45 32.5");
-
-const r = document.createElement(SVGPathElement);
-r.setAttribute("d", "M20 10 L20 60 M35 40 L50 65");
-
-const s = document.createElement(SVGPathElement);
-s.setAttribute("d", "M18 56 L30 56 L30 27.5 A12.5 12.5 0 0 1 55 27.5 L55 60");
-
-const t = document.createElement(SVGPathElement);
-t.setAttribute("d", "M20 60 L20 14 45 14");
-
-const u = document.createElement(SVGPathElement);
-u.setAttribute("d", "M20 10 L20 45 Q20 56 37 56");
-
-const ch = document.createElement(SVGPathElement);
-ch.setAttribute("d", "M30 10 L30 60 M50 20 L50 34 L28 34 A15 15 0 0 0 10 48.6666666666666666666666");
-
-const letras = [a, b, c, d, e, f, gue, gh, i, j, k, l, m, n, o, p, r, s, t, u, ch];*/
-
-function svg(letra) {
-    const svg = document.createElementNS(svgNS, "svg");
-    svg.setAttribute("viewBox", "0 0 60 60");
-    svg.setAttribute("width", "1em");
-    svg.setAttribute("height", "1em");
-    svg.appendChild(letra.cloneNode(true)); // Clona el elemento para evitar moverlo del array
-    return svg;
-}
-
 const diccionario = [
     {palabra: "a", traduccion: "a", pronunciacion: "/a/", definicion: {
             español: {
@@ -94,7 +5,7 @@ const diccionario = [
                 2: { categoria: "prep.", texto: "Indica dirección, destinatario o manera. Equivale a 'a' en español."}
             },
             milijes: {
-                1: { categoria: "", texto: "Poknien fosna ed Ch-Lij ed milijes" },
+                1: { categoria: "", texto: "Poknien fosna ed ñ-h ed milijes" },
                 2: { categoria: "", texto: "" }
             }
         }
@@ -161,7 +72,7 @@ const diccionario = [
             }
         }
     },
-    {palabra: "abecedario", traduccion: "Ch-Lij", pronunciacion: "/'t͡ʃeliʒ/", definicion: {
+    {palabra: "abecedario", traduccion: "ñ-h", pronunciacion: "/'t͡ʃelix/", definicion: {
             español: {
                 1: { categoria: "", texto: "" }
             },
@@ -276,7 +187,7 @@ const diccionario = [
             }
         }
     },
-    {palabra: "aburrimiento", traduccion: "jiche", pronunciacion: "/'ʒit͡ʃe/", definicion: {
+    {palabra: "aburrimiento", traduccion: "jiñe", pronunciacion: "/'ʒit͡ʃe/", definicion: {
             español: {
                 1: { categoria: "", texto: "" }
             },
@@ -540,7 +451,7 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "aguacate", traduccion: "puchei", pronunciacion: "/pu't͡ʃei/", definicion: {español: {
+    {palabra: "aguacate", traduccion: "puñei", pronunciacion: "/pu't͡ʃei/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -879,14 +790,14 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "decir", sinonimos: ["hablar"], traduccion: "tochfa", pronunciacion: "/tot͡ʃ'fa/", definicion: {español: {
+    {palabra: "decir", sinonimos: ["hablar"], traduccion: "toñfa", pronunciacion: "/tot͡ʃ'fa/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
             1: { categoria: "", texto: "" }
         }}, conjugacion: {
-        infinitivo: "tochfa",
-        conjugado: "toch"
+        infinitivo: "toñfa",
+        conjugado: "toñ"
     }},
     {palabra: "del", traduccion: "edo", pronunciacion: "/'eðo/", definicion: {español: {
             1: { categoria: "", texto: "" }
@@ -912,7 +823,7 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "diccionario", traduccion: "techinost", pronunciacion: "/te't͡ʃinost/", definicion: {español: {
+    {palabra: "diccionario", traduccion: "teñinost", pronunciacion: "/te't͡ʃinost/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -1080,7 +991,7 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "guap@", traduccion: "rame", pronunciacion: "/'rame/", definicion: {español: {
+    {palabra: "guapo", traduccion: "rame", pronunciacion: "/'rame/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -1137,7 +1048,7 @@ const diccionario = [
         infinitivo: "marefa",
         conjugado: "mare"
     }},
-    {palabra: "izquierd@", traduccion: "nabi", pronunciacion: "/'naβi/", definicion: {español: {
+    {palabra: "izquierda", traduccion: "nabi", pronunciacion: "/'naβi/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -1167,8 +1078,9 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "letra", traduccion: "fosna", pronunciacion: "/'fosna'/", definicion: {español: {
-            1: { categoria: "", texto: "" }
+    {palabra: "letra", traduccion: "fosna", pronunciacion: "/'fosna/", definicion: {
+        español: {
+            1: { categoria: "sus.", texto: "" }
         },
         milijes: {
             1: { categoria: "", texto: "" }
@@ -1180,7 +1092,7 @@ const diccionario = [
             1: { categoria: "", texto: "" }
         }}},
     {palabra: "los", traduccion: "los", pronunciacion: "/los/", definicion: {español: {
-            1: { categoria: "", texto: "" }
+            1: { categoria: "det.", texto: "" }
         },
         milijes: {
             1: { categoria: "", texto: "" }
@@ -1209,7 +1121,7 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "mango", traduccion: "niche", pronunciacion: "/'nit͡ʃe/", definicion: {español: {
+    {palabra: "mango", traduccion: "niñe", pronunciacion: "/'nit͡ʃe/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -1245,7 +1157,7 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "melocotón", traduccion: "odich", pronunciacion: "/'odit͡ʃ/", definicion: {español: {
+    {palabra: "melocotón", traduccion: "odiñ", pronunciacion: "/'odit͡ʃ/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -1377,7 +1289,7 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "palabra", traduccion: "techin", pronunciacion: "/'tet͡ʃin/", definicion: {español: {
+    {palabra: "palabra", traduccion: "teñin", pronunciacion: "/'tet͡ʃin/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -1452,7 +1364,7 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "porque", traduccion: "choa", pronunciacion: "/'t͡ʃoa/", definicion: {español: {
+    {palabra: "porque", traduccion: "ñoa", pronunciacion: "/'t͡ʃoa/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -1602,13 +1514,13 @@ const diccionario = [
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "tierra", traduccion: "agar", pronunciacion: "/'aɣaɾ/", definicion: {español: {
+    {palabra: "tierra", traduccion: "ayar", pronunciacion: "/'aɣaɾ/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
             1: { categoria: "", texto: "" }
         }}},
-    {palabra: "tomate", traduccion: "cheif", pronunciacion: "/'t͡ʃeif/", definicion: {español: {
+    {palabra: "tomate", traduccion: "ñeif", pronunciacion: "/'t͡ʃeif/", definicion: {español: {
             1: { categoria: "", texto: "" }
         },
         milijes: {
@@ -1704,23 +1616,31 @@ function buscarPalabra() {
     t.classList.add('word-strong');
     let pr = document.createElement('p');
     pr.classList.add('word-gray');
+    let def = document.createElement('div');
+    let milijes = document.createElement('p');
+    milijes.classList.add('milijes');
+    def.appendChild(milijes);
 
     diccionario.forEach((element) => {
         if (element.palabra === busqueda || element.sinonimos?.includes(busqueda)) { // Si la palabra está en español y/o es un sinónimo
             p.innerText = "En milijés:";
             t.innerText = element.traduccion;
             pr.innerText = element.pronunciacion;
+            milijes.innerText = element.definicion.milijes[1].texto;
             resultsContainer.appendChild(p);
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
+            resultsContainer.appendChild(def);
             if (element.conjugacion) {
             mostrarConjugacion(element);
             }
         } else if (element.traduccion === busqueda) { // Si la palabra está en milijés
             t.innerText = element.traduccion;
             pr.innerText = element.pronunciacion;
+            milijes.innerText = element.definicion.milijes[1].texto;
             resultsContainer.appendChild(t);
             resultsContainer.appendChild(pr);
+            resultsContainer.appendChild(def);
             if (element.conjugacion) {
             mostrarConjugacion(element);
             }
@@ -1739,6 +1659,7 @@ function buscarPalabra() {
     return; 
 }
 
+// comprobar que hay un valor en el input antes de buscar
 function verificarBusqueda () {
     if (searchInput.value.trim() === "") {
     resultsContainer.innerHTML = "<p class='word'>Por favor, ingresa una palabra para buscar.</p>";

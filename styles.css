@@ -1,24 +1,23 @@
+@font-face {
+  font-family: "Milijes";
+  src: url("Fonts/Milijes1.ttf") format("truetype");
+  font-display: swap;
+}
+
 body {
   background: #f4f4f4;
   padding: 20px;
   color: #222;
 }
+.milijes {
+  font-family: "Milijes", sans-serif;
+}
 .titulo {
   color: #ff6600;
-  height: 2em;
-  width: 2em;
-  margin:0 -0.3em;
   font-size: 2em;
 }
 .inicial-titulo {
   color: #00aaff;
-}
-.techin {
-  margin-left: 0;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  width: 100%;
 }
 input {
   border: none;
@@ -60,7 +59,7 @@ input:focus {
 }
 .word-strong {
   color: #00aaff;
-  font-family: sans-serif;
+  font-family: "Milijes", sans-serif;
   font-size: 3em;
   margin: 0.5em 0;
 }
