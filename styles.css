@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Milijes";
-  src: url("Fonts/Milijes1.ttf") format("truetype");
+  font-family: "Milijes Sans";
+  src: url("Fonts/MilijesSansMedium.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@ body {
   color: #222;
 }
 .milijes {
-  font-family: "Milijes", sans-serif;
+  font-family: "Milijes Sans", sans-serif;
 }
 .titulo {
   color: #ff6600;
@@ -59,7 +59,7 @@ input:focus {
 }
 .word-strong {
   color: #00aaff;
-  font-family: "Milijes", sans-serif;
+  font-family: "Milijes Sans", sans-serif;
   font-size: 3em;
   margin: 0.5em 0;
 }
