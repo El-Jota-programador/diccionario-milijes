@@ -14,7 +14,7 @@ body {
 }
 .titulo {
   color: #ff6600;
-  font-size: 2em;
+  font-size: 3em;
 }
 .inicial-titulo {
   color: #00aaff;
@@ -31,7 +31,7 @@ input:focus {
   width: 100%;
   max-width: 1285px;
   font-family: "Milijes Sans", sans-serif;
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 #search-container {
   display: flex;
