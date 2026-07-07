@@ -30,7 +30,7 @@ input:focus {
   padding: 10px;
   width: 100%;
   max-width: 1285px;
-  font-family: sans-serif;
+  font-family: "Milijes Sans", sans-serif;
   font-size: 1.2em;
 }
 #search-container {
